@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-black: #0a0a0a;
+  --color-brand-dark: #141414;
+  --color-brand-crimson: #dc2626;
+  --color-brand-crimsonHover: #b91c1c;
+  --color-brand-gold: #d97706;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-black text-gray-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-brand-crimson text-white;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neutral-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neutral-600;
+}
