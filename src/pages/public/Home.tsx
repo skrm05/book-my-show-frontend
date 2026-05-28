@@ -7,7 +7,6 @@ import { usePaymentHandler } from "../../hooks/usePaymentHandler";
 import toast from "react-hot-toast";
 
 export const Home: React.FC = () => {
-  // Listen for PayPal redirects
   usePaymentHandler();
 
   const [movies, setMovies] = useState<Movie[]>([]);
