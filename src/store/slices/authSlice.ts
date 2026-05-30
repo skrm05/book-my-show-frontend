@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import { UserRole, type DecodedToken } from "../../types";
+import { UserRole } from "../../types";
 import { decodeJWT } from "../../utils/jwt";
 
 interface AuthState {
