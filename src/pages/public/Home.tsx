@@ -56,13 +56,13 @@ export const Home: React.FC = () => {
               to={`/movie/${movie.id}`}
               className="group relative block transition-transform duration-300 hover:scale-105"
             >
-              <div className="aspect-[2/3] w-full rounded-lg overflow-hidden bg-neutral-800 border border-neutral-800 group-hover:border-brand-crimson/50 transition-colors">
+              <div className="aspect-2/3 w-full rounded-lg overflow-hidden bg-neutral-800 border border-neutral-800 group-hover:border-brand-crimson/50 transition-colors">
                 <img
                   src={movie.posterUrl || movie.poster}
                   alt={movie.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                <div className="absolute inset-0 bg-linear-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                   <span className="text-brand-crimson font-semibold text-sm uppercase tracking-wider bg-black/50 w-fit px-2 py-1 rounded border border-brand-crimson/30">
                     Book Now
                   </span>
